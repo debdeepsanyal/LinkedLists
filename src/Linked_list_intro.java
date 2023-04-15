@@ -6,6 +6,8 @@ public class Linked_list_intro {
         LinkedList<String> placesToVisit = new LinkedList<>(); //this method of declaring a Linked List is similar to that of an ArrayList
         //var placesToVisit = new LinkedList<String>(); //this is also a method to declare a Linked List, however in this method, you need to mention the datatype
                                         //in the new LinkedList<>() in the diamond brackets
+           //It is worth noting that lists dont allow primitve types. i.e. we cannot declare a Linked list like -> LinkedList<int> = new LinkedList<>();
+             //lists allow Objects only, hence if we want to use an int in a Linked list we need to wrap it up in a wrapper class. (Integer for int) LinkedList<Integer> integer = new LinkedList<>() is supported
         placesToVisit.add("Sydney");
         placesToVisit.add(0,"Canberra");
         System.out.println(placesToVisit);
