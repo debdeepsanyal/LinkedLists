@@ -45,13 +45,15 @@ public class interactive_list2 {
 //            }
 //        }
         int c = 0;
-        for(var i : list){
-            if(item.address() < i.address()){
+        for(var i : list){ // looping through each item in the list
+            if(item.address() < i.address()){ //if the address of the argument is less than the item in the list, we want it to get it added at c.
+                              //now initially, c is 0. so, if the address of the argument element is smaller than the first item in the list, the item gets added in the first position.
+                              //if not, c gets incremented. so if the item's address is smaller than the 3rd element, item gets added at position 3
                 list.add(c,item);
-                return;
+                return;//once the item is added, terminate the method
             }
             c++;
         }
-        list.add(item);
+        list.add(item);//if the address is the largest, add it at the very last of the list
     }
 }
